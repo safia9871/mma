@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>استغفار إلكتروني</title>
+<style>
+  body {
+    text-align: center;
+    font-size: 28px;
+    font-family: "Arial", sans-serif;
+    background-color: #f3e6ff;
+    padding-top: 50px;
+  }
+  h1 {
+    color: #4b0082;
+  }
+  button {
+    font-size: 24px;
+    padding: 12px 25px;
+    background-color: #800080;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  button:hover {
+    background-color: #a020f0;
+  }
+  p {
+    font-size: 22px;
+    margin-top: 20px;
+  }
+</style>
+</head>
+<body>
+<h1>اضغط على الزر للاستغفار</h1>
+<button onclick="زيادة()">استغفر الله</button>
+<p>عدد مرات الاستغفار: <span id="عداد">0</span></p>
+
+<script>
+let عداد = 0;
+function زيادة() {
+  عداد++;
+  document.getElementById('عداد').innerText = عداد;
+}
+</script>
+</body>
+</html>
